@@ -109,9 +109,11 @@ Pip 加速设置请参考 <https://segmentfault.com/a/1190000011875306>
 ::
 
     $ yum -y install redis
+    $ systemctl enable redis
     $ systemctl start redis
 
     # centos6
+    $ chkconfig  --level 345 redis on
     $ service redis start
 
 
